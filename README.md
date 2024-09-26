@@ -1,4 +1,4 @@
-# Git Repo Template
+# External BGP Connecting 3 Autonomous Systems
 
-## CCNP Lab demo template
-Demo repo for CCNP labs
+## Autonomous Systems (AS) each running a different IGP, OSPF, EIRGP, RIP
+Configurting BGP between AS
