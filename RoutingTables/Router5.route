@@ -1,0 +1,48 @@
+! IPv4
+
+Gateway of last resort is not set
+
+      9.0.0.0/8 is variably subnetted, 5 subnets, 2 masks
+B        9.1.0.0/24 [20/829696] via 9.2.0.1, 22:56:45
+C        9.2.0.0/24 is directly connected, GigabitEthernet0/0/0
+L        9.2.0.2/32 is directly connected, GigabitEthernet0/0/0
+C        9.3.0.0/24 is directly connected, GigabitEthernet0/0/1
+L        9.3.0.2/32 is directly connected, GigabitEthernet0/0/1
+      10.0.0.0/24 is subnetted, 1 subnets
+B        10.0.0.0 [20/0] via 9.3.0.1, 22:52:42
+      11.0.0.0/32 is subnetted, 1 subnets
+B        11.0.0.1 [20/20] via 9.3.0.1, 22:52:42
+      20.0.0.0/24 is subnetted, 1 subnets
+B        20.0.0.0 [20/0] via 9.2.0.1, 23:39:27
+      30.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        30.0.0.0/24 is directly connected, Serial0/1/0
+L        30.0.0.1/32 is directly connected, Serial0/1/0
+      33.0.0.0/24 is subnetted, 1 subnets
+i L1     33.0.0.0 [115/10] via 30.0.0.2, 1d00h, Serial0/1/0
+
+! IPv6
+
+B   1::/64 [20/0]
+     via FE80::521C:B0FF:FE63:3831, GigabitEthernet0/0/1
+B   2::/64 [20/0]
+     via FE80::227:90FF:FED5:F800, GigabitEthernet0/0/0
+C   3::/64 [0/0]
+     via Serial0/1/0, directly connected
+L   3::1/128 [0/0]
+     via Serial0/1/0, receive
+B   9::/64 [20/0]
+     via FE80::521C:B0FF:FE63:3831, GigabitEthernet0/0/1
+C   9:2::/64 [0/0]
+     via GigabitEthernet0/0/0, directly connected
+L   9:2::2/128 [0/0]
+     via GigabitEthernet0/0/0, receive
+C   9:3::/64 [0/0]
+     via GigabitEthernet0/0/1, directly connected
+L   9:3::2/128 [0/0]
+     via GigabitEthernet0/0/1, receive
+B   11::1/128 [20/20]
+     via FE80::521C:B0FF:FE63:3831, GigabitEthernet0/0/1
+I1  33::/64 [115/10]
+     via FE80::CE8E:71FF:FE1E:22E0, Serial0/1/0
+L   FF00::/8 [0/0]
+     via Null0, receive
