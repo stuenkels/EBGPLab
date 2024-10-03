@@ -1,0 +1,45 @@
+! IPv4
+
+Gateway of last resort is not set
+
+      9.0.0.0/24 is subnetted, 3 subnets
+i L1     9.1.0.0 [115/40] via 30.0.0.1, 23:40:15, Serial0/1/0
+i L1     9.2.0.0 [115/10] via 30.0.0.1, 1d00h, Serial0/1/0
+i L1     9.3.0.0 [115/10] via 30.0.0.1, 1d00h, Serial0/1/0
+      10.0.0.0/24 is subnetted, 1 subnets
+i L1     10.0.0.0 [115/40] via 30.0.0.1, 22:53:29, Serial0/1/0
+      11.0.0.0/32 is subnetted, 1 subnets
+i L1     11.0.0.1 [115/40] via 30.0.0.1, 22:53:29, Serial0/1/0
+      20.0.0.0/24 is subnetted, 1 subnets
+i L1     20.0.0.0 [115/40] via 30.0.0.1, 23:40:15, Serial0/1/0
+      30.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        30.0.0.0/24 is directly connected, Serial0/1/0
+L        30.0.0.2/32 is directly connected, Serial0/1/0
+      33.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        33.0.0.0/24 is directly connected, Loopback0
+L        33.0.0.1/32 is directly connected, Loopback0
+
+! IPv6
+
+I1  1::/64 [115/40]
+     via FE80::B6A8:B9FF:FE01:BC60, Serial0/1/0
+I1  2::/64 [115/40]
+     via FE80::B6A8:B9FF:FE01:BC60, Serial0/1/0
+C   3::/64 [0/0]
+     via Serial0/1/0, directly connected
+L   3::2/128 [0/0]
+     via Serial0/1/0, receive
+I1  9::/64 [115/40]
+     via FE80::B6A8:B9FF:FE01:BC60, Serial0/1/0
+I1  9:2::/64 [115/10]
+     via FE80::B6A8:B9FF:FE01:BC60, Serial0/1/0
+I1  9:3::/64 [115/10]
+     via FE80::B6A8:B9FF:FE01:BC60, Serial0/1/0
+I1  11::1/128 [115/40]
+     via FE80::B6A8:B9FF:FE01:BC60, Serial0/1/0
+C   33::/64 [0/0]
+     via Loopback0, directly connected
+L   33::1/128 [0/0]
+     via Loopback0, receive
+L   FF00::/8 [0/0]
+     via Null0, receive
