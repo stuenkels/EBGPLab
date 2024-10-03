@@ -7,7 +7,7 @@ This lab is an extremely simplified model of the internet, 3 autonomous systems 
 
 ## Topology
 <p align="center">
-    <img src="./images/Topology.svg" width="75%">
+    <img src="./Images/Topology.svg" width="75%">
 </p>
 
 ## IP Address Configuration
